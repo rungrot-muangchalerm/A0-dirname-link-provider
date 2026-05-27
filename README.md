@@ -23,8 +23,14 @@ path.resolve(__dirname, '../../config.js')
 3. เปิดไฟล์ JavaScript/TypeScript ที่มี `__dirname + '/path'`
 4. **Ctrl+Click** ที่ path ได้เลย!
 
-หรือติดตั้งเป็น VSIX:
+## วิธี Build & Package
+
 ```bash
+# 1. ติดตั้ง dependencies ก่อน (สำคัญ!)
+npm install
+
+# 2. Build เป็นไฟล์ .vsix
 npx vsce package
 ```
-แล้วติดตั้งไฟล์ `.vsix` ผ่าน Extensions > Install from VSIX
+
+แล้วติดตั้งไฟล์ `.vsix` ผ่าน **Extensions > Install from VSIX**
